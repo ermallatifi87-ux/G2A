@@ -1,0 +1,11 @@
+let minutaHene = 95;
+let minutaMarte = 80;
+let minutaMerkure = 115;
+
+let totaliMinutave = minutaHene + minutaMarte + minutaMerkure;
+let oret = totaliMinutave / 60;
+let minutaMbetura = totaliMinutave % 60;
+
+console.log("Totali i minutave: " + totaliMinutave);
+console.log("Koha në orë: " + oret);
+console.log("Minuta që mbeten: " + minutaMbetura);

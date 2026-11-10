@@ -69,3 +69,51 @@ console.log("Çmimi para zbritjes: " + cmimiParaZbritjes + " €");
 console.log("Shuma e zbritjes (15%): " + shumaZbritjes + " €");
 console.log("Çmimi pas zbritjes: " + cmimiPasZbritjes + " €");
 console.log("Vlera përfundimtare (me transport): " + vleraPerfundimtare + " €");
+
+let vlera1 = "25";
+let vlera2 = "17";
+let vlera3 = "8";
+
+console.log("\n=== 05 Konvertimi i të dhënave ===");
+console.log("Mbledhja pa konvertim: " + (vlera1 + vlera2 + vlera3));
+// Vlerat janë tekst (string), prandaj operatori + i bashkon si tekst në vend që t'i mbledhë numerikisht.
+
+let numri1 = Number(vlera1);
+let numri2 = Number(vlera2);
+let numri3 = Number(vlera3);
+let shuma = numri1 + numri2 + numri3;
+let mesatarja = shuma / 3;
+
+console.log("Shuma pas konvertimit: " + shuma);
+console.log("Mesatarja: " + mesatarja);
+console.log("Tipi i shumës: " + typeof shuma);
+console.log("Tipi i mesatares: " + typeof mesatarja);
+
+let eHena = 95;
+let eMarta = 80;
+let eMerkura = 115;
+let totaliMinutave = eHena + eMarta + eMerkura;
+let totaliOreve = totaliMinutave / 60;
+let oreTePlota = Math.floor(totaliMinutave / 60);
+let minutaTeMbetura = totaliMinutave % 60;
+
+console.log("\n=== 06 Analiza e kohës së studimit ===");
+console.log("Minutat gjithsej: " + totaliMinutave);
+console.log("Koha gjithsej në orë: " + totaliOreve);
+console.log("Koha gjithsej: " + oreTePlota + " orë e " + minutaTeMbetura + " minuta");
+
+let stoku = 120;
+let cmimiNjesise = 6.75;
+
+console.log("\n=== 07 Inventari i dyqanit ===");
+console.log("Stoku fillestar: " + stoku + " njësi");
+
+stoku -= 18;
+console.log("Pas shitjes së parë: " + stoku + " njësi");
+
+stoku -= 27;
+console.log("Pas shitjes së dytë: " + stoku + " njësi");
+
+stoku += 35;
+console.log("Pas furnizimit: " + stoku + " njësi");
+console.log("Vlera përfundimtare e stokut: " + (stoku * cmimiNjesise).toFixed(2) + " €");
